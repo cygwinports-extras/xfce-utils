@@ -3,29 +3,43 @@ xfce-utils
 Various wrapper scripts for the Xfce4 desktop
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.11-1
-  gtk2-x11-2.10.11-1
-  libdbus-glib_1_2-0.73-1
-  libdbus1_3-1.0.2-1
-  libintl8-0.15-1
-  libxfce4util-4.4.1-1
-  libxfcegui4-4.4.1-1
+  cygwin-1.5.25-15
+  exo
+  glib2-2.16.6-1
+  gtk2-x11-2.12.12-1
+  libdbus-glib_1_2-0.76-1
+  libdbus1_3-1.2.3-1
+  libintl8-0.17-2
+  libxfce4util-4.5.91-1
+  libxfcegui4-4.5.91-1
+  perl
+  thunar
+  terminal
+  xdg-user-dirs
+  xfce4-panel
+  xfce4-session
+  xfce4-settings
+  xfdesktop
+  xfwm4
+  xinit
+  xmessage
+  xmodmap
+  xrdb
+  xscreensaver
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.4.0-1
+  xfce4-dev-tools-4.5.91-1
 
 Canonical website:
   http://www.xfce.org/
@@ -36,21 +50,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce-utils-4.4.1-X-src.tar.bz2
+  unpack xfce-utils-4.5.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce-utils-4.4.1-X.cygport all
+  cygport ./xfce-utils-4.5.91-X.cygport all
 
 This will create:
-  /usr/src/xfce-utils-4.4.1-X-src.tar.bz2
-  /usr/src/xfce-utils-4.4.1-X.tar.bz2
+  /usr/src/xfce-utils-4.5.91-X-src.tar.bz2
+  /usr/src/xfce-utils-4.5.91-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/xfce-utils.sh
+  /etc/xdg/autostart/xfconf-migration-4.6.desktop
+  /etc/xdg/xfce4/Xft.xrdb
   /etc/xdg/xfce4/xinitrc
   /usr/bin/startxfce4
   /usr/bin/xfbrowser4
@@ -60,16 +76,17 @@ Files included in the binary package:
   /usr/bin/xfmountdev4
   /usr/bin/xfrun4.exe
   /usr/bin/xfterm4
+  /usr/lib/xfce4/xfconf-migration/xfconf-migration-4.6.pl
   /usr/share/dbus-1/services/org.xfce.RunDialog.service
-  /usr/share/doc/Cygwin/xfce-utils-4.4.1.README
-  /usr/share/doc/xfce-utils-4.4.1/AUTHORS
-  /usr/share/doc/xfce-utils-4.4.1/COPYING
-  /usr/share/doc/xfce-utils-4.4.1/ChangeLog
-  /usr/share/doc/xfce-utils-4.4.1/INSTALL
-  /usr/share/doc/xfce-utils-4.4.1/NEWS
-  /usr/share/doc/xfce-utils-4.4.1/README
+  /usr/share/doc/xfce-utils-4.5.91/AUTHORS
+  /usr/share/doc/xfce-utils-4.5.91/COPYING
+  /usr/share/doc/xfce-utils-4.5.91/ChangeLog
+  /usr/share/doc/xfce-utils-4.5.91/INSTALL
+  /usr/share/doc/xfce-utils-4.5.91/NEWS
+  /usr/share/doc/xfce-utils-4.5.91/README
   /usr/share/icons/hicolor/48x48/apps/xfce4-logo.png
   /usr/share/locale/af/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/am/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ar/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/az/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/be/LC_MESSAGES/xfce-utils.mo
@@ -95,11 +112,13 @@ Files included in the binary package:
   /usr/share/locale/hi/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/hu/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/hy/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/id/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/it/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ja/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ka/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ko/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/lt/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/lv/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/mk/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/mr/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ms/LC_MESSAGES/xfce-utils.mo
@@ -110,11 +129,14 @@ Files included in the binary package:
   /usr/share/locale/pt_PT/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ro/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ru/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/si/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/sk/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/sq/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/sv/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/ta/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/tr/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/uk/LC_MESSAGES/xfce-utils.mo
+  /usr/share/locale/ur/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/vi/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/xfce-utils.mo
@@ -124,6 +146,7 @@ Files included in the binary package:
   /usr/share/xfce4/GPL
   /usr/share/xfce4/INFO
   /usr/share/xfce4/INFO.ca
+  /usr/share/xfce4/INFO.de
   /usr/share/xfce4/INFO.es
   /usr/share/xfce4/INFO.fi
   /usr/share/xfce4/INFO.fr
@@ -154,10 +177,14 @@ Files included in the binary package:
   /usr/share/xfce4/doc/xfce-chunk.css
   /usr/share/xfce4/doc/xfce-mouse.png
   /usr/share/xfce4/doc/xfce.css
+  /usr/share/xsessions/xfce.desktop
 
 ------------------
 
 Port Notes:
+
+----- version 4.5.91-1 -----
+Version bump for 4.6-beta2.
 
 ----- version 4.4.1-1 -----
 Initial release of Xfce 4.4 for Cygwin.
