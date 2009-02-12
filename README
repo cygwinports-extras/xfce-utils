@@ -10,8 +10,8 @@ Runtime requirements:
   libglib2.0_0-2.18.3-1
   libgtk2.0_0-2.14.6-1
   libintl8-0.17-2
-  libxfce4util4-4.5.92-1
-  libxfcegui4_4-4.5.92-1
+  libxfce4util4-4.5.99.1-1
+  libxfcegui4_4-4.5.99.1-1
   perl
   thunar
   terminal
@@ -39,7 +39,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.92-1
+  xfce4-dev-tools-4.5.99.1-1
 
 Canonical website:
   http://www.xfce.org/
@@ -50,15 +50,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce-utils-4.5.92-X-src.tar.bz2
+  unpack xfce-utils-4.5.99.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce-utils-4.5.92-X.cygport all
+  cygport ./xfce-utils-4.5.99.1-X.cygport all
 
 This will create:
-  /usr/src/xfce-utils-4.5.92-X-src.tar.bz2
-  /usr/src/xfce-utils-4.5.92-X.tar.bz2
+  /usr/src/xfce-utils-4.5.99.1-X-src.tar.bz2
+  /usr/src/xfce-utils-4.5.99.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -78,12 +78,12 @@ Files included in the binary package:
   /usr/bin/xfterm4
   /usr/lib/xfce4/xfconf-migration/xfconf-migration-4.6.pl
   /usr/share/dbus-1/services/org.xfce.RunDialog.service
-  /usr/share/doc/xfce-utils-4.5.92/AUTHORS
-  /usr/share/doc/xfce-utils-4.5.92/COPYING
-  /usr/share/doc/xfce-utils-4.5.92/ChangeLog
-  /usr/share/doc/xfce-utils-4.5.92/INSTALL
-  /usr/share/doc/xfce-utils-4.5.92/NEWS
-  /usr/share/doc/xfce-utils-4.5.92/README
+  /usr/share/doc/xfce-utils-4.5.99.1/AUTHORS
+  /usr/share/doc/xfce-utils-4.5.99.1/COPYING
+  /usr/share/doc/xfce-utils-4.5.99.1/ChangeLog
+  /usr/share/doc/xfce-utils-4.5.99.1/INSTALL
+  /usr/share/doc/xfce-utils-4.5.99.1/NEWS
+  /usr/share/doc/xfce-utils-4.5.99.1/README
   /usr/share/icons/hicolor/48x48/apps/xfce4-logo.png
   /usr/share/locale/af/LC_MESSAGES/xfce-utils.mo
   /usr/share/locale/am/LC_MESSAGES/xfce-utils.mo
@@ -182,6 +182,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.5.99.1-1 -----
+Version bump for 4.6-rc1.
 
 ----- version 4.5.92-1 -----
 Version bump for 4.6-beta2.
