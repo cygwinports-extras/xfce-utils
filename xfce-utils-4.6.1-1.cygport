@@ -1,0 +1,5 @@
+inherit xfce4
+
+DESCRIPTION="Xfce4 utilities"
+
+CYGCONF_ARGS="--with-browser=midori --with-terminal=Terminal"
