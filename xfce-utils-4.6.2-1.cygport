@@ -2,4 +2,6 @@ inherit xfce4
 
 DESCRIPTION="Xfce4 utilities"
 
+DISTCLEANFILES="scripts/xinitrc.in scripts/xinitrc"
+
 CYGCONF_ARGS="--with-browser=midori --with-terminal=Terminal"
