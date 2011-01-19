@@ -1,0 +1,22 @@
+--- origsrc/xfce-utils-4.8.0/scripts/Makefile.am	2011-01-16 10:02:27.000000000 -0600
++++ src/xfce-utils-4.8.0/scripts/Makefile.am	2011-01-18 20:16:08.041128100 -0600
+@@ -37,9 +37,9 @@ desktop_in_files = xfhelp4.desktop.in
+ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+ @INTLTOOL_DESKTOP_RULE@
+ 
+-xinitrc: Makefile $(srcdir)/xinitrc.in
++xinitrc: Makefile xinitrc.in
+ 	rm -f xinitrc xinitrc.tmp
+-	$(edit) $(srcdir)/xinitrc.in >xinitrc.tmp
++	$(edit) xinitrc.in >xinitrc.tmp
+ 	mv xinitrc.tmp xinitrc
+ 
+ conffilesdir=@sysconfdir@/xdg/xfce4
+@@ -72,7 +72,6 @@ EXTRA_DIST = \
+ 	xfbrowser4.in \
+ 	startxfce4.in \
+ 	xfhelp4.in \
+-	xinitrc.in \
+ 	xfconf-migration-4.6.desktop.in \
+ 	xfconf-migration-4.6.pl.in
+ 

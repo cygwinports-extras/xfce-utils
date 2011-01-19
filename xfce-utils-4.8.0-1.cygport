@@ -2,6 +2,8 @@ inherit xfce4
 
 DESCRIPTION="Xfce4 utilities"
 
-DISTCLEANFILES="scripts/xinitrc.in scripts/xinitrc"
+PATCH_URI="4.8.0-vpath.patch"
+
+DISTCLEANFILES="scripts/xinitrc scripts/xinitrc.in"
 
 CYGCONF_ARGS="--with-browser=midori --with-terminal=Terminal"
